@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Register for Sherlock Holmes Service</h1>
+    <p id="description">How often have I said to you that when you have eliminated the impossible, whatever remains,
+        however improbable, must be the truth?</p>
+
+    <!-- Personal information -->
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name"
+                    required /></label>
+            <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email"
+                    required /></label>
+            <label id="number-label" for="number">Age (Optional) <input id="number" type="number" placeholder="Age"
+                    min="13" max="120" /></label>
+        </fieldset>
+
+        <!-- Case information -->
+        <fieldset>
+            <label for="dropdown"> What is your case about?
+                <select id="dropdown" name="type-case">
+                    <option>(select one)</option>
+                    <option>Thief</option>
+                    <option>Murder</option>
+                    <option>Kidnap</option>
+                    <option>Ransom</option>
+                    <option>Other</option>
+
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Is your case extraodinary?</legend>
+            <label for="prior">
+                <input id="prior" type="radio" name="good-case" checked class="inline" value="yes" />
+                Yes
+            </label>
+            <label for="not-prior">
+                <input id="not-prior" class="inline" type="radio" name="good-case" value="no" />
+                No
+            </label>
+        </fieldset>
+
+        <!-- Extra information -->
+        <fieldset>
+            <legend>Tick all the boxes what are true for you</legend>
+            <label for="adventures-tick">
+                <input id="adventures-tick" class="inline" type="checkbox" value="adventures"> I have read The Adventure
+                series
+            </label>
+            <label for="memoirs-tick">
+                <input id="memoirs-tick" class="inline" type="checkbox" value="memoirs"> I have read The Memoirs series
+            </label>
+            <label for="return-tick">
+                <input id="return-tick" class="inline" type="checkbox" value="return"> I have read The Return series
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="extra-information">Additional information
+                <textarea id="extra-information" name="extra-infomation" rows="6" placeholder="I have none."></textarea>
+            </label>
+
+        </fieldset>
+        <input id="submit" type="submit" class="button" value="Submit" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-image: url(./images/London.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    font-family: "Lucida Handwriting", monospace;
+    font-size: 18px;
+    color: white;
+}
+
+form {
+    background-color: #190033;
+    margin: 0 auto;
+    max-width: 850px;
+    min-width: 500px;
+    width: 60vw;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1,
+p {
+    max-width: 850px;
+    text-align: center;
+    color: #000000;
+}
+
+h1 {
+    margin: 1em auto;
+}
+
+p {
+    margin: -30px auto 30px auto;
+}
+
+label {
+    display: block;
+    margin: 0.5em;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin: 14px 0 20px 0;
+    min-height: 3em;
+    border-radius: 5px;
+}
+
+::placeholder,
+#dropdown {
+    color: #000000;
+    font-family: "Lucida Handwriting", monospace;
+    font-size: 14px;
+}
+
+input,
+textarea,
+select {
+    color: #000000;
+    border: 1px solid white
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: -20 0 -20 0;
+}
+
+fieldset {
+    padding: 0.5rem 0;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Lucida Handwriting", monospace;
+    background-color: #002ead;
+    color: white;
+    border: none
+}
+
+.button:hover {
+    background-color: #CCE5FF;
+    color: #002ead;
+    transition: 0.7s;
+}
